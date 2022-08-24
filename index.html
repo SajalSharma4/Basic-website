@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>Music</title>
+    
+    <style>
+@media screen and (max-width:1072px){
+    #menubar ul a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1000px){
+    .right-align form input{
+        width: 200px;
+    }
+}
+@media screen and (max-width:830px){
+    .left-align h1{
+        font-size: 50px;
+    }
+    .left-align p{
+        font-size: 17px;
+    }
+    .right-align form input{
+        display: none;
+    }
+    .right-align form button:hover .right-align form input{
+        display: block;
+        width:100px;
+    }
+    #menubar ul a{
+        font-size: 14px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <script src="assets/vendors/bootstrap/bootstrap.min.js"></script>
+    <div id="header">  
+        <a href="#"> Privacy Policy</a>  
+        <a href="#"> Terms of Use</a>
+          <div id="login-btn">
+            <button>Login/Register</button>
+            <div id="drop-down">
+                <a href="#">Log-in</a>
+                <a href="#">Sign-Up</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="branding">
+        <div class="left-align">
+            <img src="assets/images/branding/logo3.png">
+            <h1>Music Classroom</h1>
+            <p>--------------------------------------------<br> A place filled with the Scholars of Music</p>
+        </div>
+        <div class="right-align">
+            <form action="search.php" method="get">
+                <input type="search" name="keyword" placeholder="Search songs, artists, albums..." >
+                
+                <button> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="menubar">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="hits.html">Latest Hits</a></li>
+            <li><a href="recent.html">Recently Added</a></li>
+            <li><a href="favs.html">Favourites</a></li>
+            <li><a href="playlists.php">Playlists</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+    </div>
+
+    <div id="web-content"> 
+      <section id="products">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/images/cards/content1.jpg" class="card-img-top" alt="card-1">
+              <div class="card-body">
+                <h5 class="card-title">Info 1</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/images/cards/content2.jpg" class="card-img-top" alt="card-2">
+              <div class="card-body">
+                <h5 class="card-title">Info 2</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/images/cards/content3.jpg" class="card-img-top" alt="card-3">
+              <div class="card-body">
+                <h5 class="card-title">Info 3</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br><br>
+        <section id="faqs">
+            <h1>Frequently Asked Questions</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Item 1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Item 2
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Item 3
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </div>
+
+        
+    <div class="footer-nav" style="background-color: black;">
+      <div class="footer-left">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Terms & Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Latest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link last" href="#">FAQ's</a>
+          </li>
+        </ul>
+    </div>
+      <div class="footer-right">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">New Hits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ideas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link last" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>          
+    </div>
+</body>
+</html>
